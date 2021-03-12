@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Xrandr
+Comment=Change resolution
+Keywords=xrandr;
+Exec=/home/wxyz/.mylayout
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Utility;

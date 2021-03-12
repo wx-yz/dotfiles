@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Use GPU scaling
+for output in $(xrandr --prop | grep -E -o -i "^[A-Z\-]+-[0-9]+"); do xrandr --output "$output" --set "scaling mode" "Full aspect"; done
+
+# 200% scaling on the Dell monitor is too big. Scaling it down a bit
+xrandr --output DisplayPort-1 --scale 1.25x1.25 --pos 0x0 --output DisplayPort-2 --primary --pos 4800x0
+
+# Planar takes forever to come up, disabling this seems to be the easiest because
+# everytime the screen is locked, Gnome turn off the monitor
+xset -dpms
