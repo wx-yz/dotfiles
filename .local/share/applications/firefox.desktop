@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
-Name=Firefox
-GenericName=Web Browser
+Name=Firefox Local
+GenericName=Local Web Browser
 GenericName[ca]=Navegador web
 GenericName[cs]=Webový prohlížeč
 GenericName[es]=Navegador web
@@ -42,7 +42,7 @@ Comment[pt]=Navegue na Internet
 Comment[pt_BR]=Navegue na Internet
 Comment[sk]=Prehliadanie internetu
 Comment[sv]=Surfa på webben
-Exec=env MOZ_X11_EGL=1 /home/wxyz/.local/bin/firefox/firefox --class Firefox %u
+Exec=env MOZ_X11_EGL=1 /home/wxyz/.local/bin/firefox/firefox --class FirefoxLocal %u
 Icon=firefox
 Terminal=false
 Type=Application
@@ -51,7 +51,7 @@ StartupNotify=true
 Categories=Network;WebBrowser;
 Keywords=web;browser;internet;
 Actions=new-window;new-private-window;profile-manager-window;
-StartupWMClass=Firefox
+StartupWMClass=FirefoxLocal
 
 X-Desktop-File-Install-Version=0.26
 
@@ -161,7 +161,7 @@ Name[wo]=Palanteer bu bees
 Name[xh]=Ifestile entsha
 Name[zh_CN]=新建窗口
 Name[zh_TW]=開新視窗
-Exec=env MOZ_X11_EGL=1 /home/wxyz/.local/bin/firefox/firefox --new-window --class Firefox %u
+Exec=env MOZ_X11_EGL=1 /home/wxyz/.local/bin/firefox/firefox --new-window --class FirefoxLocal %u
 
 [Desktop Action new-private-window]
 Name=Open a New Private Window
@@ -269,9 +269,9 @@ Name[wo]=Panlanteeru biir bu bees
 Name[xh]=Ifestile yangasese entsha
 Name[zh_CN]=新建隐私浏览窗口
 Name[zh_TW]=新增隱私視窗
-Exec=env MOZ_X11_EGL=1 /home/wxyz/.local/bin/firefox/firefox --private-window --class Firefox %u
+Exec=env MOZ_X11_EGL=1 /home/wxyz/.local/bin/firefox/firefox --private-window --class FirefoxLocal %u
 
 [Desktop Action profile-manager-window]
 Name=Open the Profile Manager
 Name[cs]=Správa profilů
-Exec=env MOZ_X11_EGL=1 /home/wxyz/.local/bin/firefox/firefox --ProfileManager --class Firefox 
+Exec=env MOZ_X11_EGL=1 /home/wxyz/.local/bin/firefox/firefox --ProfileManager --class FirefoxLocal
